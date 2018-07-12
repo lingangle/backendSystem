@@ -7,5 +7,6 @@ var accountRouter = express.Router();
 const accountCTRL = require(path.join(__dirname,'../controllers/accountRouter'))
 accountRouter.get('/index',accountCTRL.getLoginPage)
 
+accountRouter.get('/vcode',accountCTRL.getVcode)
 
 module.exports = accountRouter
